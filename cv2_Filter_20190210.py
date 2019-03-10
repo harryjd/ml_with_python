@@ -44,7 +44,7 @@ for row in range(0, height - filter1_width + 1):
             # 1 切片数据
             mat1 = img_color[row:row+filter1_width, col:col+filter1_width, chnl]
             mat_r1 = mat_filter1 * mat1
-            sum_r1 = np.sum(np.reshape(mat_r1, (mat_r1.size,)))
+            sum_r1 = np.sum(np.reshape(mat_r1, (mat_r1.size,))) #利用np.reshape()把二维数组重组成1维的，便于求和
             sum_r = sum_r + sum_r1
         #end of for chnl in range(0, channel)
         mat_COV1[row, col] = sum_r//3
