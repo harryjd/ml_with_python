@@ -61,6 +61,7 @@ with tf.Session() as sess:
             # print('S1\n', sess.run(S1, feed_dict={X_input: X}))
             # print('W2\n', sess.run(W2))
     # 输出最后的连接矩阵
+    #print('loss\n', sess.run(loss))
     #print('W1\n', sess.run(W1))
     #print('Belta1\n', sess.run(Belta1))
     #print('W2\n', sess.run(W2))
