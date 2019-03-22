@@ -19,10 +19,10 @@ print('y=', y)
 batch_size = 10
 b2 = np.random.randn(1)
 print('b2=', b2)
-X_input = tf.placeholder(tf.float32, shape=[batch_size, 9])
+X_input = tf.placeholder(tf.float32, shape=[batch_size, 9]) #输入数据有9个指标
 Y_Label = tf.placeholder(tf.float32, shape=[batch_size, 1])
 
-W1 = tf.Variable(tf.random_normal([9, 10], 0.0, 1.0))      # 隐含层5个神经元
+W1 = tf.Variable(tf.random_normal([9, 10], 0.0, 1.0))      # 隐含层10个神经元
 Belta1 = tf.Variable(tf.zeros([1, 10]) + 0.1)
 W2 = tf.Variable(tf.random_normal([10, 1], 0.0, 1.0))        #
 Belta2 = tf.Variable(tf.zeros([1, 1])+0.1)
